@@ -1,0 +1,101 @@
+SELECT version();
+                                 version                                  
+--------------------------------------------------------------------------
+ PostgreSQL 17.11 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit
+(1 row)
+
+SELECT CURRENT_DATE;
+ current_date 
+--------------
+ 2026-10-12
+(1 row)
+
+SELECT CURRENT_TIME;
+    current_time    
+--------------------
+ 15:24:03.570852+03
+(1 row)
+
+SELECT 2 + 2 AS result;
+ result 
+--------
+      4
+(1 row)
+
+SELECT 'Hello' || ' ' || 'World' AS greeting;
+  greeting   
+-------------
+ Hello World
+(1 row)
+
+DROP DATABASE IF EXISTS test_db;
+DROP DATABASE
+CREATE DATABASE test_db;
+CREATE DATABASE
+SELECT datname FROM pg_database;
+  datname  
+-----------
+ postgres
+ template1
+ template0
+ test_db
+(4 rows)
+
+You are now connected to database "test_db" as user "postgres".
+You are now connected to database "postgres" as user "postgres".
+DROP DATABASE test_db;
+DROP DATABASE
+CREATE DATABASE test_db;
+CREATE DATABASE
+You are now connected to database "test_db" as user "postgres".
+CREATE TABLE students (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INTEGER CHECK (age > 0),
+    email VARCHAR(100) UNIQUE
+);
+CREATE TABLE
+INSERT INTO students (name, age, email) VALUES
+('Иванов Иван', 20, 'ivanov@mail.ru'),
+('Петров Пётр', 21, 'petrov@mail.ru'),
+('Сидорова Анна', 19, 'sidorova@mail.ru');
+INSERT 0 3
+SELECT * FROM students;
+ id |     name      | age |      email       
+----+---------------+-----+------------------
+  1 | Иванов Иван   |  20 | ivanov@mail.ru
+  2 | Петров Пётр   |  21 | petrov@mail.ru
+  3 | Сидорова Анна |  19 | sidorova@mail.ru
+(3 rows)
+
+SELECT * FROM students WHERE age > 20;
+ id |    name     | age |     email      
+----+-------------+-----+----------------
+  2 | Петров Пётр |  21 | petrov@mail.ru
+(1 row)
+
+SELECT * FROM students ORDER BY age DESC;
+ id |     name      | age |      email       
+----+---------------+-----+------------------
+  2 | Петров Пётр   |  21 | petrov@mail.ru
+  1 | Иванов Иван   |  20 | ivanov@mail.ru
+  3 | Сидорова Анна |  19 | sidorova@mail.ru
+(3 rows)
+
+UPDATE students SET age = 22 WHERE name = 'Иванов Иван';
+UPDATE 1
+DELETE FROM students WHERE name = 'Петров Пётр';
+DELETE 1
+SELECT * FROM students;
+ id |     name      | age |      email       
+----+---------------+-----+------------------
+  3 | Сидорова Анна |  19 | sidorova@mail.ru
+  1 | Иванов Иван   |  22 | ivanov@mail.ru
+(2 rows)
+
+DROP TABLE students;
+DROP TABLE
+You are now connected to database "postgres" as user "postgres".
+DROP DATABASE test_db;
+DROP DATABASE
+ЗАМЕЧАНИЕ:  база данных "test_db" не существует, пропускается
