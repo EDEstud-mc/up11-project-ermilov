@@ -14,3 +14,4 @@
 | 1 | Инструктаж по ТБ. Выдача вариантов. Ознакомление с КИМ | — |
 | 2 | Установка СУБД PostgreSQL/MySQL. Настройка pgAdmin/MySQL Workbench | [РТ пара 2](RT/) |
 | 3 | Первый SQL-запрос. SELECT, WHERE, ORDER BY | [РТ пара 3](RT/) |
+| 4 | CREATE TABLE. PRIMARY KEY, NOT NULL, UNIQUE, DEFAULT | [РТ пара 4](RT/) |
