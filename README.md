@@ -21,3 +21,4 @@
 | 4 | CREATE TABLE. PRIMARY KEY, NOT NULL, UNIQUE, DEFAULT | [РТ пара 4](RT/) |
 | 5 | Типы данных: INTEGER, VARCHAR, DATE, NUMERIC, BOOLEAN | [РТ пара 5](RT/), [md](workbooks/rabochaya-tetrad-para-05.md), [SQL](src/db/04_data_types.sql) |
 | 6 | Анализ предметной области. Выделение сущностей и атрибутов | [РТ пара 6](RT/), [md](workbooks/rabochaya-tetrad-para-06.md), [анализ](docs/05_analysis.md) |
+| 7 | Нормализация до 3НФ. Устранение транзитивных зависимостей | [РТ пара 7](RT/), [md](workbooks/rabochaya-tetrad-para-07.md), [SQL](src/db/06_normalization.sql) |
