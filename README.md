@@ -5,7 +5,10 @@
 **СУБД:** PostgreSQL 17 + pgAdmin 4
 
 ## Структура
-- `RT/` — заполненные рабочие тетради по парам
+- `RT/` — заполненные рабочие тетради по парам (docx)
+- `workbooks/` — рабочие тетради в формате Markdown
+- `src/db/` — SQL-скрипты
+- `screenshots/` — скриншоты выполнения заданий по парам
 
 ## Выполненные пары
 
@@ -15,3 +18,4 @@
 | 2 | Установка СУБД PostgreSQL/MySQL. Настройка pgAdmin/MySQL Workbench | [РТ пара 2](RT/) |
 | 3 | Первый SQL-запрос. SELECT, WHERE, ORDER BY | [РТ пара 3](RT/) |
 | 4 | CREATE TABLE. PRIMARY KEY, NOT NULL, UNIQUE, DEFAULT | [РТ пара 4](RT/) |
+| 5 | Типы данных: INTEGER, VARCHAR, DATE, NUMERIC, BOOLEAN | [РТ пара 5](RT/), [md](workbooks/rabochaya-tetrad-para-05.md), [SQL](src/db/04_data_types.sql) |
