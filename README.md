@@ -24,3 +24,4 @@
 | 7 | Нормализация до 3НФ. Устранение транзитивных зависимостей | [РТ пара 7](RT/), [md](workbooks/rabochaya-tetrad-para-07.md), [SQL](src/db/06_normalization.sql) |
 | 8 | Упражнение 1.4: анализ схем данных (6 вариантов) | [РТ пара 8](RT/), [md](workbooks/rabochaya-tetrad-para-08.md), [анализ](docs/07_analysis_schemas.md) |
 | 9 | Построение ER-диаграммы в Draw.io. Обозначение PK и FK | [РТ пара 9](RT/), [md](workbooks/rabochaya-tetrad-para-09.md), [ERD .drawio](docs/ERD_mir_chasov.drawio), [ERD .pdf](docs/ERD_mir_chasov.pdf), [ERD «Парфюмерия»](docs/ERD_parfumeriya.drawio) |
+| 10 | Сохранение ER-диаграммы в PDF. Проверка ключей и связей | [РТ пара 10](RT/), [md](workbooks/rabochaya-tetrad-para-10.md), [ERD .pdf](docs/ERD_mir_chasov.pdf), [ERD «Парфюмерия» .pdf](docs/ERD_parfumeriya.pdf) |
