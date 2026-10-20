@@ -26,3 +26,4 @@
 | 9 | Построение ER-диаграммы в Draw.io. Обозначение PK и FK | [РТ пара 9](RT/), [md](workbooks/rabochaya-tetrad-para-09.md), [ERD .drawio](docs/ERD_mir_chasov.drawio), [ERD .pdf](docs/ERD_mir_chasov.pdf), [ERD «Парфюмерия»](docs/ERD_parfumeriya.drawio) |
 | 10 | Сохранение ER-диаграммы в PDF. Проверка ключей и связей | [РТ пара 10](RT/), [md](workbooks/rabochaya-tetrad-para-10.md), [ERD .pdf](docs/ERD_mir_chasov.pdf), [ERD «Парфюмерия» .pdf](docs/ERD_parfumeriya.pdf) |
 | 11 | Создание справочников: categories, sizes. CHECK-ограничения | [РТ пара 11](RT/), [md](workbooks/rabochaya-tetrad-para-11.md), [SQL](src/db/08_dictionaries.sql) |
+| 12 | Создание таблицы товаров products. CHECK на цену > 0 | [РТ пара 12](RT/), [md](workbooks/rabochaya-tetrad-para-12.md), [SQL](src/db/09_products.sql) |
