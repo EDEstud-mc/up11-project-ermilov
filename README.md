@@ -27,3 +27,4 @@
 | 10 | Сохранение ER-диаграммы в PDF. Проверка ключей и связей | [РТ пара 10](RT/), [md](workbooks/rabochaya-tetrad-para-10.md), [ERD .pdf](docs/ERD_mir_chasov.pdf), [ERD «Парфюмерия» .pdf](docs/ERD_parfumeriya.pdf) |
 | 11 | Создание справочников: categories, sizes. CHECK-ограничения | [РТ пара 11](RT/), [md](workbooks/rabochaya-tetrad-para-11.md), [SQL](src/db/08_dictionaries.sql) |
 | 12 | Создание таблицы товаров products. CHECK на цену > 0 | [РТ пара 12](RT/), [md](workbooks/rabochaya-tetrad-para-12.md), [SQL](src/db/09_products.sql) |
+| 13 | Создание таблицы остатков stock_items. CHECK на количество ≥ 0 | [РТ пара 13](RT/), [md](workbooks/rabochaya-tetrad-para-13.md), [SQL](src/db/10_stock_items.sql), [ДЗ](src/db/homework_13.sql) |
